@@ -15,4 +15,4 @@ console.log(SimpleLodash.drop(array1, 2));
 console.log(SimpleLodash.dropRight(array1, 2));
 
 console.log(y);
-console.log(SimpleLodash.fill(y, '*', 1, 4));
+console.log(SimpleLodash.fill(y, '%', 1, 4));
