@@ -42,7 +42,7 @@ export class SimpleLodash {
         for (let i = start; i < end; i++) {
             array[i] = value;
         }
-        return array;
+        return array
     }
 
 }
