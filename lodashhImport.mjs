@@ -70,7 +70,7 @@ let array5 = [2, 3, 4];
 console.log(_.xor(array4, array5));
 
 let w = _.without([3, 5, 5, 1], 1, 3);
-let x = _.pull([3, 5, 5, 1], 1, 3);
+let x = _.pull([3, 5, 5, 1], 1, 3); // pull same as without
 let t = _.without([4, 7, 4, 8], 7, 4);
 console.log(w);
 console.log(t);
