@@ -155,5 +155,8 @@ export class SimpleLodash {
         //creates a new array in a filtered form that is there are values to exclude and give new values as output.
         return array.filter(item => !values.includes(item));
     }
+    nth(array,index = array.length-1){
+        return array[index];
+    }
 }
 

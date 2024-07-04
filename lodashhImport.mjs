@@ -74,3 +74,6 @@ let x = _.pull([3, 5, 5, 1], 1, 3); // pull same as without
 let t = _.without([4, 7, 4, 8], 7, 4);
 console.log(w);
 console.log(t);
+
+let z = _.nth([1,2,3,4,5,6,7,8]);
+console.log(z)
