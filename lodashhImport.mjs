@@ -81,13 +81,13 @@ console.log(z)
 array = [1, 2, 3, 4, 5, 6, 7];
 
 let mapped = _.map(array, x => x * 2);
-console.log(mapped); // [2, 4, 6, 8, 10]
+console.log(mapped);
 
 let filtered = _.filter(array, x => x > 2);
-console.log(filtered); // [3, 4, 5]
+console.log(filtered);
 
 let found = _.find(array, x => x === 3);
-console.log(found); // 3
+console.log(found);
 
 console.log(_.every(array, x => x < 10));
 console.log(_.includes(array, 3));
