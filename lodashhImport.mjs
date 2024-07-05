@@ -22,18 +22,18 @@ console.log(_.fill(y, 'xX*Xx', 1, 3));
 console.log(_.findIndex(y, 2));
 console.log(_.findLastIndex(y, 2));
 
-const nestedArray = [1, [2, [3, [4]], 5]];
-const flatArray = _.flattenDepth(nestedArray, 2);
+let nestedArray = [1, [2, [3, [4]], 5]];
+let flatArray = _.flattenDepth(nestedArray, 2);
 console.log(flatArray);
-const flatArray2 = _.flattenDeep(nestedArray);
+let flatArray2 = _.flattenDeep(nestedArray);
 console.log(flatArray2);
 
-const pairs = [['a', 1], ['b', 2], ['c', 3]];
-const object = _.fromPairs(pairs);
+let pairs = [['a', 1], ['b', 2], ['c', 3]];
+let object = _.fromPairs(pairs);
 console.log(object);
 
 
-console.log(_.head(array)); 
+console.log(_.head(array));
 
 console.log(_.intersection(array1, array2));
 
@@ -41,12 +41,12 @@ console.log(_.join(array, '-'));
 
 console.log(_.pull(array, 3, 5));
 
-const valuesToRemove = [2, 4];
+let valuesToRemove = [2, 4];
 console.log(_.pullAll(array, valuesToRemove));
 
-console.log(_.pullAt(array, 1, 3)); 
+console.log(_.pullAt(array, 1, 3));
 
-console.log(_.remove(array, n => n % 2 === 0)); 
+console.log(_.remove(array, n => n % 2 === 0));
 
 console.log(_.reverse(array));
 
@@ -75,5 +75,25 @@ let t = _.without([4, 7, 4, 8], 7, 4);
 console.log(w);
 console.log(t);
 
-let z = _.nth([1,2,3,4,5,6,7,8]);
+let z = _.nth([1, 2, 3, 4, 5, 6, 7, 8]);
 console.log(z)
+
+array = [1, 2, 3, 4, 5, 6, 7];
+
+let mapped = _.map(array, x => x * 2);
+console.log(mapped); // [2, 4, 6, 8, 10]
+
+let filtered = _.filter(array, x => x > 2);
+console.log(filtered); // [3, 4, 5]
+
+let found = _.find(array, x => x === 3);
+console.log(found); // 3
+
+
+console.log(_.countBy(array, x => x % 2));
+console.log(_.every(array, x => x < 10));
+console.log(_.includes(array, 3));
+console.log(_.partition(array, x => x % 2));
+console.log(_.reduce(array, (sum, x) => sum + x, 0));
+console.log(_.reject(array, x => x % 2));
+console.log(_.size(array));
