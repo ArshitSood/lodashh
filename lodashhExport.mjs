@@ -219,17 +219,6 @@ export class SimpleLodash {
         return undefined;
     }
 
-    countBy(collection, condition) {
-        /*It creates an object composed of keys generated from the results of
-         running each element of collection*/
-        const result = {};
-        for (const item of collection) {
-            const key = typeof condition === 'function' ? condition(item) : item[condition];
-            result[key] = (result[key] || 0) + 1;
-        }
-        return result;
-    }
-
     every(collection, condition) {
         /*it checks if the predicate returns true for all elements of map
          and iteration is stopped once the predicate returns falsely.*/

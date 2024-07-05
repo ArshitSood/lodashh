@@ -89,8 +89,6 @@ console.log(filtered); // [3, 4, 5]
 let found = _.find(array, x => x === 3);
 console.log(found); // 3
 
-
-console.log(_.countBy(array, x => x % 2));
 console.log(_.every(array, x => x < 10));
 console.log(_.includes(array, 3));
 console.log(_.partition(array, x => x % 2));
